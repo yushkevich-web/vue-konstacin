@@ -1,0 +1,51 @@
+@import "./breakpoints.scss";
+@mixin container {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@mixin Font18-400 {
+  font-family: "Poppins";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.575rem;
+}
+@mixin Font20-400 {
+  font-family: "Poppins";
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+@mixin Font36-400 {
+  font-family: "Poppins";
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 3.15rem;
+}
+@mixin Font20-500 {
+  font-family: "Poppins";
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+
+@mixin SectionTitle {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 4.2rem;
+  @include custom(840) {
+    font-size: 2rem;
+  }
+  @include custom(580) {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+@mixin Text {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1.5rem;
+}
