@@ -7,7 +7,7 @@
         contact@konstancinhouse4sale.com
       </a>
     </h3>
-    <form :class="$style.form" @submit.prevent="sendRequest">
+    <form :class="$style.form" @submit.prevent="sendEmail">
       <div :class="$style.input">
         <input required type="text" placeholder="Name" v-model="name" />
       </div>
@@ -24,32 +24,39 @@
 </template>
 
 <script>
-import axios from "axios";
+import emailjs from "@emailjs/browser";
+
 export default {
   data() {
     return {
       name: "",
       email: "",
       message: "",
-      botToken: process.env.VUE_APP_BOT_TOKEN,
-      chat_id: process.env.VUE_APP_CHAT_ID,
     };
   },
   methods: {
-    async sendRequest() {
-      this.name = this.name.replace(".", "\\.");
-      this.email = this.email.replace(".", "\\.");
-      this.message = this.message.replace(".", "\\.");
-      await axios.post(
-        `https://api.telegram.org/bot${this.botToken}/sendMessage?parse_mode=MarkdownV2`,
-        {
-          chat_id: `${this.chat_id}`,
-          text: `*Name:* _${this.name}_\n*Email:* _${this.email}_\n*Message:* _${this.message}_`,
-        }
-      );
-      this.name = "";
-      this.email = "";
-      this.message = "";
+    sendEmail() {
+      const templateParams = {
+        user_name: this.name,
+        user_email: this.email,
+        message: this.message,
+      };
+
+      emailjs
+        .send(
+          "service_w4glk9v",
+          "template_3m8pu0h",
+          templateParams,
+          "RTqNTuNNUqEKSke7k"
+        )
+        .then(
+          (response) => {
+            console.log("SUCCESS!", response.status, response.text);
+          },
+          (error) => {
+            console.log("FAILED...", error);
+          }
+        );
     },
   },
 };
