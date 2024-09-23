@@ -34,7 +34,11 @@
   flex-direction: column;
   justify-content: flex-end;
   .info {
-    background-color: $lightGrey;
+    backdrop-filter: blur(8px);
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    );
     color: $darkText;
     max-width: 42.5rem;
     margin: 0 auto;

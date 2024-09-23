@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.container">
+  <div :class="$style.container" id="contacts">
     <h2 :class="$style.title">Feel free to contact</h2>
     <h3 :class="$style.text">
       We speak Polish, English and German

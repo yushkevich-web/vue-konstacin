@@ -2,9 +2,21 @@
   <div :class="$style.container">
     <header :class="$style.header">
       <nav :class="$style.menu">
-        <a href="" :class="$style.link">{{ $t("headerMenu.firstLink") }}</a>
-        <a href="" :class="$style.link">{{ $t("headerMenu.secondLink") }}</a>
-        <a href="" :class="$style.link">{{ $t("headerMenu.thirdLink") }}</a>
+        <a
+          href="#description"
+          @click="scrollTo('#description')"
+          :class="$style.link"
+          >{{ $t("headerMenu.firstLink") }}</a
+        >
+        <a
+          href="#contacts"
+          @click="scrollTo('#contacts')"
+          :class="$style.link"
+          >{{ $t("headerMenu.secondLink") }}</a
+        >
+        <a href="#points" @click="scrollTo('#points')" :class="$style.link">{{
+          $t("headerMenu.thirdLink")
+        }}</a>
       </nav>
       <a href="mailto:contact@konstancinhouse4sale.com" :class="$style.mail">
         contact@konstancinhouse4sale.com
@@ -12,6 +24,19 @@
     </header>
   </div>
 </template>
+<script>
+import VueScrollTo from "vue-scrollto";
+export default {
+  methods: {
+    scrollTo(component) {
+      VueScrollTo.scrollTo(component, {
+        offset: -50,
+        duration: 500,
+      });
+    },
+  },
+};
+</script>
 
 <style lang="scss" module>
 @import "@/assets/styles/common.scss";

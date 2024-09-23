@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.container">
+  <div :class="$style.container" id="description">
     <h2 :class="$style.title">Description of the Property</h2>
     <p :class="$style.text">
       Located only 23 km from the center of Warsaw, this property provides the
