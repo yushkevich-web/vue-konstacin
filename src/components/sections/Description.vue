@@ -22,9 +22,10 @@
     margin: 0 0 2.5rem 0;
   }
   .text {
+    text-indent: 2em;
+    text-align: justify;
     max-width: 85rem;
     margin: 0 auto;
-    text-align: center;
     font-size: 1.5rem;
     line-height: 140%;
     @include custom(840) {

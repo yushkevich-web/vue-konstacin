@@ -49,6 +49,9 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include custom(490) {
+      flex-wrap: wrap;
+    }
     .menu {
       display: flex;
       align-items: center;
@@ -62,6 +65,9 @@ export default {
         @include custom(740) {
           font-size: 1rem;
         }
+        @include custom(600) {
+          font-size: 0.8rem;
+        }
       }
     }
     .mail {
@@ -69,6 +75,9 @@ export default {
       @include Font20-500;
       @include custom(740) {
         font-size: 1rem;
+      }
+      @include custom(600) {
+        font-size: 0.8rem;
       }
     }
   }

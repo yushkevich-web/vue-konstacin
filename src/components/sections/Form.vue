@@ -97,6 +97,9 @@ export default {
       padding: 0 0 1rem 0;
       margin: 0 0 3.125rem 0;
       font-size: 1.125rem;
+      & input {
+        width: 100%;
+      }
     }
     .button {
       text-align: center;

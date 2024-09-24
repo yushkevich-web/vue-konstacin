@@ -14,11 +14,27 @@
         <div :class="$style.bottom">5</div>
       </div>
       <div :class="$style.column">
-        <div :class="$style.text">Ask for price</div>
+        <a :class="$style.text" href="#contacts" @click="scrollTo('#contacts')">
+          Ask for price
+        </a>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+import VueScrollTo from "vue-scrollto";
+export default {
+  methods: {
+    scrollTo(component) {
+      VueScrollTo.scrollTo(component, {
+        offset: -50,
+        duration: 500,
+      });
+    },
+  },
+};
+</script>
 
 <style lang="scss" module>
 @import "@/assets/styles/common.scss";
@@ -102,6 +118,7 @@
         }
       }
       .text {
+        color: $black;
         @include Font20-400;
         @include custom(670) {
           font-size: 1rem;

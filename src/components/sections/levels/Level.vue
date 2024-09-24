@@ -180,13 +180,12 @@ export default {
           }
         }
         .text {
-          font-size: 1.5rem;
+          font-size: 1.3rem;
           max-width: 37rem;
           margin: 0 0 2.5rem 0;
           line-height: 140%;
           @include custom(930) {
             font-size: 1.2rem;
-            line-height: 100%;
           }
           @include custom(400) {
             font-size: 1rem;
@@ -199,6 +198,11 @@ export default {
           font-size: 1.25rem;
           padding: 1rem 3.5rem;
           color: $black;
+          transition: 0.2s;
+          &:hover {
+            background-color: $black;
+            color: $white;
+          }
           @include custom(400) {
             font-size: 1rem;
           }
