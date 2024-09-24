@@ -20,13 +20,16 @@
       </div>
     </div>
     <div :class="$style.rooms">
-      <div :class="$style.room" v-for="item in rooms" :key="item.title">
+      <div
+        :class="$style.room"
+        v-for="item in rooms"
+        :key="item.title"
+        @click="setRooms(item)"
+      >
         <div :class="$style.left">
           <div :class="$style.title">{{ item.title }}</div>
           <div :class="$style.text">{{ item.text }}</div>
-          <button @click="setRooms(item)" :class="$style.button">
-            View photos
-          </button>
+          <button :class="$style.button">View photos</button>
         </div>
         <div :class="$style.right">
           <img :class="$style.image" :src="item.mainImage" alt="" />
@@ -152,6 +155,7 @@ export default {
   }
   .rooms {
     .room {
+      cursor: pointer;
       padding: 4rem 0;
       border-top: 0.0625rem solid $black;
       display: flex;
