@@ -99,6 +99,7 @@ export default {
     gap: 0.5rem;
     padding: 2rem 0 0 0;
     margin: 0 0 4rem 0;
+
     .icon {
       max-width: 2rem;
       max-height: 2rem;
@@ -170,7 +171,6 @@ export default {
       margin: 0 auto 5rem auto;
       @include custom(600) {
         font-size: 1.2rem;
-        line-height: 100%;
         margin: 0 auto 3rem auto;
       }
       @include custom(400) {

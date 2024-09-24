@@ -95,6 +95,9 @@ export default {
     @include SectionTitle;
     margin: 0 0 4.125rem 0;
     text-align: center;
+    @include custom(600) {
+      margin: 0 0 2.5rem 0;
+    }
   }
   .text {
     @include Text;
@@ -102,7 +105,14 @@ export default {
     line-height: 2rem;
     margin: 0 auto 4.125rem auto;
     max-width: 50rem;
-    text-align: center;
+    text-indent: 2em;
+    text-align: justify;
+    @include custom(840) {
+      font-size: 1.2rem;
+    }
+    @include custom(580) {
+      font-size: 1rem;
+    }
   }
   .artisan {
     display: grid;

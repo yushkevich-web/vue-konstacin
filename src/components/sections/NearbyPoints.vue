@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.container">
+  <div :class="$style.container" id="points">
     <h2 :class="$style.title">Nearby points of interest</h2>
     <div :class="$style.content">
       <div :class="$style.places">

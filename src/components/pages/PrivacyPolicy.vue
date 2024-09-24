@@ -133,6 +133,7 @@ export default {
   @include container;
   margin: 0 auto 2.5rem auto;
   padding-top: 2rem;
+  line-height: 140%;
   .back {
     display: flex;
     align-items: center;

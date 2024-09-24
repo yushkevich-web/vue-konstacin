@@ -20,13 +20,16 @@
       </div>
     </div>
     <div :class="$style.rooms">
-      <div :class="$style.room" v-for="item in rooms" :key="item.title">
+      <div
+        :class="$style.room"
+        v-for="item in rooms"
+        :key="item.title"
+        @click="setRooms(item)"
+      >
         <div :class="$style.left">
           <div :class="$style.title">{{ item.title }}</div>
           <div :class="$style.text">{{ item.text }}</div>
-          <button @click="setRooms(item)" :class="$style.button">
-            View photos
-          </button>
+          <button :class="$style.button">View photos</button>
         </div>
         <div :class="$style.right">
           <img :class="$style.image" :src="item.mainImage" alt="" />
@@ -152,6 +155,7 @@ export default {
   }
   .rooms {
     .room {
+      cursor: pointer;
       padding: 4rem 0;
       border-top: 0.0625rem solid $black;
       display: flex;
@@ -180,13 +184,12 @@ export default {
           }
         }
         .text {
-          font-size: 1.5rem;
+          font-size: 1.3rem;
           max-width: 37rem;
           margin: 0 0 2.5rem 0;
           line-height: 140%;
           @include custom(930) {
             font-size: 1.2rem;
-            line-height: 100%;
           }
           @include custom(400) {
             font-size: 1rem;
@@ -199,6 +202,11 @@ export default {
           font-size: 1.25rem;
           padding: 1rem 3.5rem;
           color: $black;
+          transition: 0.2s;
+          &:hover {
+            background-color: $black;
+            color: $white;
+          }
           @include custom(400) {
             font-size: 1rem;
           }
