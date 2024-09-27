@@ -17,6 +17,7 @@
         <a href="#points" @click="scrollTo('#points')" :class="$style.link">{{
           $t("headerMenu.thirdLink")
         }}</a>
+        <LocalSwitcher />
       </nav>
       <a href="mailto:contact@konstancinhouse4sale.com" :class="$style.mail">
         contact@konstancinhouse4sale.com
@@ -25,8 +26,12 @@
   </div>
 </template>
 <script>
+import LocalSwitcher from "./LocalSwitcher.vue";
 import VueScrollTo from "vue-scrollto";
 export default {
+  components: {
+    LocalSwitcher,
+  },
   methods: {
     scrollTo(component) {
       VueScrollTo.scrollTo(component, {
@@ -49,35 +54,29 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include custom(490) {
+    @include custom(640) {
       flex-wrap: wrap;
     }
     .menu {
       display: flex;
       align-items: center;
       gap: 3.125rem;
-      @include custom(820) {
+      @include custom(900) {
         gap: 1rem;
       }
       .link {
         @include Font20-400;
         color: $black;
-        @include custom(740) {
+        @include custom(770) {
           font-size: 1rem;
-        }
-        @include custom(600) {
-          font-size: 0.8rem;
         }
       }
     }
     .mail {
       color: $black;
       @include Font20-500;
-      @include custom(740) {
+      @include custom(770) {
         font-size: 1rem;
-      }
-      @include custom(600) {
-        font-size: 0.8rem;
       }
     }
   }

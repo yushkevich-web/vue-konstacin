@@ -2,9 +2,24 @@
   <div :class="$style.container">
     <h2 :class="$style.title">Watch the presentation</h2>
     <div :class="$style.video">
-      <video controls preload="auto" ref="video">
-        <source src="/video/test.mp4" type="video/mp4" />
-      </video>
+      <video
+        controls
+        poster="/img/fullscreen.jpg"
+        ref="video"
+        src="/video/en.mp4"
+        type="video/mp4"
+        preload="none"
+        v-if="$i18n.locale === 'en'"
+      ></video>
+      <video
+        controls
+        poster="/img/fullscreen.jpg"
+        ref="video"
+        src="/video/pl.mp4"
+        type="video/mp4"
+        preload="none"
+        v-if="$i18n.locale === 'pl'"
+      ></video>
     </div>
   </div>
 </template>
