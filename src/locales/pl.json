@@ -1,7 +1,458 @@
 {
-  "headerMenu": {
+  "headerSection": {
     "firstLink": "Opis",
     "secondLink": "Łączność",
     "thirdLink": "Zwrotnica"
-  }
+  },
+  "fullScreenSection": {
+    "lot": "lot",
+    "area": "powierzchnia",
+    "bedrooms": "sypialnie",
+    "button": "Zapytaj o cenę"
+  },
+  "videoSection": {
+    "title": "Oglądaj prezentację"
+  },
+  "descriptionSection": {
+    "title": "Opis nieruchomości",
+    "text": "Ta położona zaledwie 23 km od centrum Warszawy nieruchomość zapewnia idealną równowagę między spokojnym wypoczynkiem wśród rezerwatów przyrody i pól uprawnych, a jednocześnie w pobliżu wszystkich udogodnień tętniącej życiem metropolii."
+  },
+  "levels": [
+    {
+      "title": "Parter",
+      "area": "256",
+      "roomsCount": "8",
+      "height": "3.1m - 6.6m",
+      "image": "/img/groundlevel.png",
+      "areas": [
+        {
+          "value": "79m²",
+          "title": "salon"
+        },
+        {
+          "value": "17m²",
+          "title": "przedsionek"
+        },
+        {
+          "value": "46m²",
+          "title": "garaż, 2.44m"
+        },
+        {
+          "value": "15m²",
+          "title": "garage foyer"
+        },
+        {
+          "value": "34m²",
+          "title": "korytarz"
+        },
+        {
+          "value": "8m²",
+          "title": "pralnia"
+        },
+        {
+          "value": "23m²",
+          "title": "pokój dla gości"
+        },
+        {
+          "value": "6m²",
+          "title": "łazienka"
+        },
+        {
+          "value": "23m²",
+          "title": "kuchnia"
+        },
+        {
+          "value": "5m²",
+          "title": "przedpokój"
+        }
+      ],
+      "rooms": [
+        {
+          "title": "Przedsionek i środkowy korytarz",
+          "text": "Po wejściu do domu gości wita przytulny przedsionek, któremu uroku dodają stylowe drzwi przesuwane, które prowadzą do rozległego korytarza, który łączy pomieszczenia mieszkalne na parterze z centralnymi schodami, które tworzą przejście między pomieszczeniami wspólnymi na parterze a przytulnymi pokojami prywatnymi na piętrze.",
+          "mainImage": "/img/groundLevel/1/1.jpg",
+          "images": [
+            {
+              "img": "/img/groundLevel/1/1.jpg"
+            },
+            {
+              "img": "/img/groundLevel/1/2.jpg"
+            },
+            {
+              "img": "/img/groundLevel/1/3.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Salon",
+          "text": "Ten robiący wrażenie salon wyposażony jest w dwupoziomowy kominek z naturalnego kamienia, a także w belki oraz podłogę wykonaną z tzw. drewna odzyskanego, którego wiek jest szacowany na około 120 lat. Kominek posiada najnowocześniejszy system wentylacyjny i podnoszone szklane dzwiczki, a jego stylowy design dodaje wnętrzu ciepła, stylu oraz wszechstronności. ",
+          "mainImage": "/img/groundLevel/2/1.jpg",
+          "images": [
+            {
+              "img": "/img/groundLevel/2/1.jpg"
+            },
+            {
+              "img": "/img/groundLevel/2/2.jpg"
+            },
+            {
+              "img": "/img/groundLevel/2/3.jpg"
+            },
+            {
+              "img": "/img/groundLevel/2/4.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Sklepiony sufit z galerią",
+          "text": "Sklepiony sufit dodaje wnętrzu przestrzeni oraz przestronności, podczas gdy górny poziom salonu to miejsce stworzone do relaksu, a także idealny kącik do czytania oraz doskonały punkt widokowy, z którego można podziwiać imponującą architekturę pokoju.",
+          "mainImage": "/img/groundLevel/3/1.jpg",
+          "images": [
+            {
+              "img": "/img/groundLevel/3/1.jpg"
+            },
+            {
+              "img": "/img/groundLevel/3/2.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Kuchnia",
+          "text": "Przestrzeń kuchenna została celowo pozostawiona wstanie niewykończonym, aby zapewnić nowym właścicielom domu możliwość dostosowania tego pomieszczenia do własnych gustów i preferencji. Aby pokazać potencjał tej przestrzeni, stworzyliśmy model graficzny, który przedstawia propozycję klasycznej kuchni w czarno-białej kolorystyce.",
+          "mainImage": "/img/groundLevel/4/1.jpg",
+          "images": [
+            {
+              "img": "/img/groundLevel/4/1.jpg"
+            },
+            {
+              "img": "/img/groundLevel/4/2.jpg"
+            },
+            {
+              "img": "/img/groundLevel/4/3.jpg"
+            },
+            {
+              "img": "/img/groundLevel/4/4.jpg"
+            },
+            {
+              "img": "/img/groundLevel/4/5.jpg"
+            },
+            {
+              "img": "/img/groundLevel/4/6.jpg"
+            },
+            {
+              "img": "/img/groundLevel/4/7.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Weranda",
+          "text": "Weranda o powierzchni 38 m2 zapewnia wyjątkową atmosferę i daje dodatkową przestrzeń do podejmowania gości i rozkoszowania się świeżym powietrzem położonego z tyłu domu ogrodu.",
+          "mainImage": "/img/groundLevel/5/1.jpg",
+          "images": [
+            {
+              "img": "/img/groundLevel/5/1.jpg"
+            },
+            {
+              "img": "/img/groundLevel/5/2.jpg"
+            },
+            {
+              "img": "/img/groundLevel/5/3.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pierwsze piętro",
+      "area": "244",
+      "roomsCount": "7",
+      "height": "2.3m - 3.3m",
+      "image": "/img/firstlevel.png",
+      "areas": [
+        {
+          "value": "63m²",
+          "title": "galeria"
+        },
+        {
+          "value": "19m²",
+          "title": "łazienka"
+        },
+        {
+          "value": "46m²",
+          "title": "studio apartment"
+        },
+        {
+          "value": "18m²",
+          "title": "łazienka"
+        },
+        {
+          "value": "31m²",
+          "title": "korytarz"
+        },
+        {
+          "value": "11m²",
+          "title": "główna łazienka"
+        },
+        {
+          "value": "25m²",
+          "title": "sypialnia główna"
+        },
+        {
+          "value": "8m²",
+          "title": "łazienka"
+        },
+        {
+          "value": "23m²",
+          "title": "łazienka"
+        }
+      ],
+      "rooms": [
+        {
+          "title": "Górne piętro",
+          "text": "Na górnym piętrze znajdują się cztery sypialnie, które jasny i przestronny korytarz łączy ze wspólną łazienką, jednocześnie prowadząc do galerii nad salonem. Łazienka została pozostawiona w stanie niewykończonym, ale proponowane przez nas modele graficzne przedstawiają potencjalne pomysły projektowe, w tym dodanie pomieszczenia na pralnię.",
+          "mainImage": "/img/upperLevel/1/1.jpg",
+          "images": [
+            {
+              "img": "/img/upperLevel/1/1.jpg"
+            },
+            {
+              "img": "/img/upperLevel/1/2.jpg"
+            },
+            {
+              "img": "/img/upperLevel/1/3.jpg"
+            },
+            {
+              "img": "/img/upperLevel/1/4.jpg"
+            },
+            {
+              "img": "/img/upperLevel/1/5.jpg"
+            },
+            {
+              "img": "/img/upperLevel/1/6.jpg"
+            },
+            {
+              "img": "/img/upperLevel/1/7.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Główna sypialnia",
+          "text": "Główna sypialnia posiada własną łazienkę i drzwi we francuskim stylu, które prowadzą na taras o powierzchni 38m2. Modele graficzne dla pozostającej do wykończenia łazienki głównej stanowią potencjalną propozycję projektową.",
+          "mainImage": "/img/upperLevel/2/1.jpg",
+          "images": [
+            {
+              "img": "/img/upperLevel/2/1.jpg"
+            },
+            {
+              "img": "/img/upperLevel/2/2.jpg"
+            },
+            {
+              "img": "/img/upperLevel/2/3.jpg"
+            },
+            {
+              "img": "/img/upperLevel/2/4.jpg"
+            },
+            {
+              "img": "/img/upperLevel/2/5.jpg"
+            },
+            {
+              "img": "/img/upperLevel/2/6.jpg"
+            },
+            {
+              "img": "/img/upperLevel/2/7.jpg"
+            },
+            {
+              "img": "/img/upperLevel/2/8.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Górny balkon",
+          "text": "Górny balkon o powierzchni 9 m2, położony nad głównym wejściem do domu dodaje element luksusu dla sypialni wychodzącej na południe, pozwalając jej mieszkańcom podziwiać urzekający widok na sad i okolicę.",
+          "mainImage": "/img/upperLevel/3/1.jpg",
+          "images": [
+            {
+              "img": "/img/upperLevel/3/1.jpg"
+            },
+            {
+              "img": "/img/upperLevel/3/2.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Piwnica",
+      "area": "124",
+      "roomsCount": "6",
+      "height": "2.3m",
+      "image": "/img/basementlevel.png",
+      "areas": [
+        {
+          "value": "52m²",
+          "title": "pokój"
+        },
+        {
+          "value": "6m²",
+          "title": "łazienka"
+        },
+        {
+          "value": "29m²",
+          "title": "pokój"
+        },
+        {
+          "value": "6m²",
+          "title": "przechowalnia"
+        },
+        {
+          "value": "11m²",
+          "title": "pokój"
+        },
+        {
+          "value": "6m²",
+          "title": "korytarz"
+        },
+        {
+          "value": "8m²",
+          "title": "kotłownia"
+        },
+        {
+          "value": "6m²",
+          "title": "pokój"
+        }
+      ],
+      "rooms": [
+        {
+          "title": "Piwnica",
+          "text": "Przestronna piwnica to wszechstronna i funkcjonalna przestrzeń do różnych celów, takich jak zajęcia rekreacyjne, kino domowe, siłownia i pokój zabaw dla dzieci.  Oświetlenie naturalne i elektryczne współpracują ze sobą, zapewniając dobrze oświetloną przestrzeń, która może być również wykorzystywana jako warsztat.",
+          "mainImage": "/img/basementLevel/1/1.jpg",
+          "images": [
+            {
+              "img": "/img/basementLevel/1/1.jpg"
+            },
+            {
+              "img": "/img/basementLevel/1/2.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Garaż i mieszkanie typu studio",
+          "text": "Samodzielne pomieszczenie mieszkalne z kuchnią, łazienką i osobnym wejściem znajduje się nad połączonym z domemdwu-samochodowym, ogrzewanym garażem, stanowi idealną propozycję dla zatrudnionej z zakwaterowaniem pomocy domowej lub członków rodziny, którzy potrzebują własnej przestrzeni.  ",
+          "mainImage": "/img/basementLevel/2/1.jpg",
+          "images": [
+            {
+              "img": "/img/basementLevel/2/1.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Ręcznie wykonany dach z gontem drewnianym",
+          "text": "Dach z gontem drewnianym, który jest ukształtowany i dopasowany do lukarn dachowych, jest charakterystyczną cechą architektoniczną, stosowaną od wieków w Polsce. Dach tego typu posiada żywotność około 50 lat i dłużej, jeśli jest odpowiednio konserwowany.",
+          "mainImage": "/img/basementLevel/3/1.jpg",
+          "images": [
+            {
+              "img": "/img/basementLevel/3/1.jpg"
+            },
+            {
+              "img": "/img/basementLevel/3/2.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Ogród",
+          "text": "Położony na częściowo zalesionej działce o powierzchni3800 m2 starannie zaprojektowany ogród posiada zarówno stare drzewa, jak i sezonowe kwiaty, które kwitną od wczesnej wiosny do późnej jesieni. Ogród jest idealnym zaciszem do relaksu, jak też do organizacji dużych przyjęć.",
+          "mainImage": "/img/basementLevel/4/1.jpg",
+          "images": [
+            {
+              "img": "/img/basementLevel/4/1.jpg"
+            },
+            {
+              "img": "/img/basementLevel/4/2.jpg"
+            },
+            {
+              "img": "/img/basementLevel/4/3.jpg"
+            },
+            {
+              "img": "/img/basementLevel/4/4.jpg"
+            },
+            {
+              "img": "/img/basementLevel/4/5.jpg"
+            },
+            {
+              "img": "/img/basementLevel/4/6.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "levelsButton": "Zobacz zdjęcia",
+  "installationsTitle": "Instalacje",
+  "installations": [
+    {
+      "text": "System zarządzania wejściem, wyposażony w kamerę o wysokiej rozdzielczości, czujniki oraz łączność wi-fi, pozwala właścicielom domu zobaczyć swoich odwiedzający oraz komunikować się z nimi w czasie rzeczywistym zarówno z panelu centralnego, jak też ze swoich smartfonów"
+    },
+    {
+      "text": "Zautomatyzowany system nawadniający, zasilany ze studni głębinowej z podziemnym zbiornikiem służącym do zbierania wody deszczowej."
+    },
+    {
+      "text": "Dwufunkcyjny system ogrzewania podłogowego i promieniowego - piec gazowy Viessman zainstalowany w 2018 roku."
+    },
+    {
+      "text": "Wyasfaltowany podjazd wyłożony kamieniami z odzyskanego granitu oraz zewnętrzne oświetlenie tworzą przyjazną atmosferę dla gości, a goście mają do dyspozycji duży dodatkowy parking."
+    }
+  ],
+  "mediaTitle": "Media",
+  "media": [
+    {
+      "text": "Gaz, woda i ścieki z sieci miejskiej"
+    },
+    {
+      "text": "Energia elektryczna z PGE"
+    },
+    {
+      "text": "Internet światłowodowy z Mazowieckich Sieci Światłowodowych"
+    }
+  ],
+  "artisansSection": {
+    "title": "Poznaj rzemieślników i wykonawców",
+    "text": "Dbałość o szczegóły i jakość wybudowanego przezjego wykonawców i rzemieślników domu jest świadectwem ich umiejętności istopnia poświęcenia swojemu rzemiosłu"
+  },
+  "team": "Zespół projektu",
+  "natureSection": {
+    "title": "Idealne miejsce do obcowania z naturą",
+    "text": "Nieruchomość oferuje rzadką okazję do zanurzenia się w głąb natury w jej najczystszej postaci, z hektarami barwnych pól, bujnymi lasami, a także urzekającymi spokojną atmosferą stawami – wszystko to w odległości krótkiego spaceru od domu."
+  },
+  "nearbyPointsTitle": "Pobliskie atrakcje",
+  "nearbyPoints": [
+    {
+      "image": "/img/places/1.jpg",
+      "title": "Muzeum Villa La Fleur",
+      "text": "W muzeum znajduje się wspaniała prywatna kolekcja dzieł artystów polskich i żydowskich związanych z École de Paris, a także wystawy czasowe",
+      "link": "https://villalafleur.com/"
+    },
+    {
+      "image": "/img/places/2.jpg",
+      "title": "Centrum Handlowe 'Stara Papiernia'",
+      "text": "Piękne, nowoczesne centrum handlowe położone w odnowionej XIX-owiecznej papierni przy ulicy handlowej, tak charakterystycznej dla małych miasteczek, w których organizowane są różne lokalne imprezy kulturalne, koncerty i pokazy.",
+      "link": "http://starapapiernia.pl/en"
+    },
+    {
+      "image": "/img/places/3.jpg",
+      "title": "Rynek Rolny w Konstancinie",
+      "text": "W środy i soboty teren naprzeciwko Starej Papierni na al. Wojska Polskiego zamienia się na kilka godzin w gwarny i kolorowy rynek. Lokalni producenci drobiu, mięs, serów oraz owoców i warzyw oferują szeroką gamę produktów spożywczych i rękodzielniczych."
+    },
+    {
+      "image": "/img/places/4.jpg",
+      "title": "Muzeum Stefana Żeromskiego",
+      "text": "Dawny dom Stefana Żeromskiego (1864-1925), znanego polskiego pisarza, oferuje bezpłatne wycieczki z przewodnikiem, które można zarezerwować na konkretną godzinę.",
+      "link": "https://mnki.pl/zeromski/eng/the_museum/about_museum"
+    }
+  ],
+  "formSection": {
+    "title": "Skontaktuj się z nami",
+    "button": "Wyślij"
+  },
+  "policy": "Polityka prywatności",
+  "height": "wysokość",
+  "rooms": "pokoji"
 }

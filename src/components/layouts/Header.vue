@@ -6,16 +6,13 @@
           href="#description"
           @click="scrollTo('#description')"
           :class="$style.link"
-          >{{ $t("headerMenu.firstLink") }}</a
-        >
-        <a
-          href="#contacts"
-          @click="scrollTo('#contacts')"
-          :class="$style.link"
-          >{{ $t("headerMenu.secondLink") }}</a
-        >
+          >{{ $t("headerSection.firstLink") }}
+        </a>
+        <a href="#contacts" @click="scrollTo('#contacts')" :class="$style.link"
+          >{{ $t("headerSection.secondLink") }}
+        </a>
         <a href="#points" @click="scrollTo('#points')" :class="$style.link">{{
-          $t("headerMenu.thirdLink")
+          $t("headerSection.thirdLink")
         }}</a>
         <LocalSwitcher />
       </nav>

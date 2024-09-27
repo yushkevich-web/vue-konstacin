@@ -5,11 +5,15 @@
         <div :class="$style.title">{{ title }}</div>
         <div :class="$style.params">
           <div :class="$style.area">{{ area }} <span>m²</span></div>
-          <div :class="$style.rooms">{{ roomsCount }} <span>rooms</span></div>
-          <div :class="$style.height">{{ height }} <span>height</span></div>
+          <div :class="$style.rooms">
+            {{ roomsCount }} <span>{{ $t("rooms") }}</span>
+          </div>
+          <div :class="$style.height">
+            {{ height }} <span>{{ $t("height") }}</span>
+          </div>
         </div>
         <ul :class="$style.areas">
-          <li :class="$style.item" v-for="item in areas" :key="item.title">
+          <li :class="$style.item" v-for="(item, index) in areas" :key="index">
             <div :class="$style.area">{{ item.value }}</div>
             <div :class="$style.text">{{ item.title }}</div>
           </li>
@@ -22,14 +26,16 @@
     <div :class="$style.rooms">
       <div
         :class="$style.room"
-        v-for="item in rooms"
-        :key="item.title"
+        v-for="(item, index) in rooms"
+        :key="index"
         @click="setRooms(item)"
       >
         <div :class="$style.left">
           <div :class="$style.title">{{ item.title }}</div>
           <div :class="$style.text">{{ item.text }}</div>
-          <button :class="$style.button">View photos</button>
+          <button :class="$style.button">
+            {{ $t("levelsButton") }}
+          </button>
         </div>
         <div :class="$style.right">
           <img :class="$style.image" :src="item.mainImage" alt="" />

@@ -1,10 +1,8 @@
 <template>
   <div :class="$style.container">
-    <h2 :class="$style.title">Meet the Artisans & Tradesmen</h2>
+    <h2 :class="$style.title">{{ $t("artisansSection.title") }}</h2>
     <div :class="$style.text">
-      The attention to detail and quality of workmanship exhibited by the
-      artisans and tradesmen who built the house is a testament to their
-      expertise and dedication to their craft.
+      {{ $t("artisansSection.text") }}
     </div>
     <div :class="$style.artisan">
       <Artisan
@@ -112,6 +110,7 @@ export default {
     }
     @include custom(580) {
       font-size: 1rem;
+      line-height: 1.5rem;
     }
   }
   .artisan {

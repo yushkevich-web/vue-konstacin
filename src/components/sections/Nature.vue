@@ -4,12 +4,10 @@
       <div :class="$style.row">
         <div :class="$style.text">
           <div :class="$style.title">
-            A perfect place to commune with nature
+            {{ $t("natureSection.title") }}
           </div>
           <div :class="$style.subtext">
-            The property offers a rare opportunity to immerse oneself in nature
-            in its purest form, with hectares of rolling fields, lush woodlands,
-            and serene ponds – all within a short walk from the house.
+            {{ $t("natureSection.text") }}
           </div>
         </div>
         <img src="/img/nature/1.jpg" alt="" />

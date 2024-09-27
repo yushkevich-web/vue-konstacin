@@ -1,11 +1,8 @@
 <template>
   <div :class="$style.container" id="description">
-    <h2 :class="$style.title">Description of the Property</h2>
+    <h2 :class="$style.title">{{ $t("descriptionSection.title") }}</h2>
     <p :class="$style.text">
-      Located only 23 km from the center of Warsaw, this property provides the
-      perfect balance of a peaceful retreat amidst nature reserves and farmland,
-      while still being in close proximity to all the conveniences of a bustling
-      metropolis.
+      {{ $t("descriptionSection.text") }}
     </p>
   </div>
 </template>
