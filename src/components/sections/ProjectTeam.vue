@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.container">
-    <h2 :class="$style.title">Project Team</h2>
+    <h2 :class="$style.title">{{ $t("team") }}</h2>
     <div :class="$style.cards">
       <div :class="$style.card" v-for="item in TEAM" :key="item.name">
         <div :class="$style.info">

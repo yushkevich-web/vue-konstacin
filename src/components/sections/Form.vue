@@ -1,12 +1,16 @@
 <template>
   <div :class="$style.container" id="contacts">
-    <h2 :class="$style.title">Feel free to contact</h2>
-    <h3 :class="$style.text">
-      We speak Polish, English and German
-      <a href="mailto:contact@konstancinhouse4sale.com">
-        contact@konstancinhouse4sale.com
-      </a>
-    </h3>
+    <h2 :class="$style.title">{{ $t("formSection.title") }}</h2>
+    <div :class="$style.contacts">
+      <div :class="$style.item">
+        <img src="/img/icons/whatsapp.svg" alt="" />
+        <a href="tel:++48513107913">+48 513 107 913</a>
+      </div>
+      <div :class="$style.item">
+        <img src="/img/icons/tg.svg" alt="" />
+        <a href="tel:+48505177027">+48 505 177 027</a>
+      </div>
+    </div>
     <form :class="$style.form" @submit.prevent="sendEmail">
       <div :class="$style.input">
         <input required type="text" placeholder="Name" v-model="name" />
@@ -18,7 +22,7 @@
         <input required type="text" placeholder="Message" v-model="message" />
       </div>
 
-      <button :class="$style.button">Submit</button>
+      <button :class="$style.button">{{ $t("formSection.button") }}</button>
     </form>
   </div>
 </template>
@@ -72,20 +76,32 @@ export default {
     text-align: center;
     margin: 0 0 2.5rem 0;
   }
-  .text {
-    text-align: center;
-    font-size: 1.5rem;
-    color: $darkText;
-    margin: 0 0 2.5rem 0;
-    @include custom(840) {
-      font-size: 1.2rem;
+  .contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    margin: 0 0 2rem 0;
+    @include custom(590) {
+      gap: 2rem;
     }
-    @include custom(580) {
-      font-size: 1rem;
+    @include custom(438) {
+      flex-direction: column;
+      gap: 0;
     }
-    & a {
-      color: $darkText;
-      text-decoration: underline;
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      & img {
+        width: 2rem;
+        height: 2rem;
+        margin: 0 auto;
+      }
+      & a {
+        color: $black;
+        font-size: 1.2rem;
+      }
     }
   }
   .form {

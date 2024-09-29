@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.container">
-    <h2 :class="$style.title">Watch the presentation</h2>
+    <h2 :class="$style.title">{{ $t("videoSection.title") }}</h2>
     <div :class="$style.video">
       <video
         controls

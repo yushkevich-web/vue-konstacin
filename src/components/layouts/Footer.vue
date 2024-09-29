@@ -8,7 +8,7 @@
         @click="scrollUp"
       />
       <router-link to="/privacy-policy" :class="$style.privacy">
-        Privacy policy
+        {{ $t("policy") }}
       </router-link>
       <a href="tel:+48000000000" :class="$style.email">
         contact@konstancinhouse4sale.com

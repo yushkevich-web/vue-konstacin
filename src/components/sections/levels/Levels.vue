@@ -2,8 +2,8 @@
   <div :class="$style.wrapper">
     <Level
       :class="$style.container"
-      v-for="level in LEVELS"
-      :key="level.title"
+      v-for="(level, index) in levels"
+      :key="index"
       :title="level.title"
       :area="level.area"
       :roomsCount="level.roomsCount"
@@ -13,15 +13,15 @@
       :rooms="level.rooms"
     />
     <div :class="$style.installations">
-      <div :class="$style.title">Installations</div>
+      <div :class="$style.title">{{ $t("installationsTitle") }}</div>
       <ul :class="$style.list">
-        <li v-for="item in INSTALLATIONS" :key="item.text">{{ item.text }}</li>
+        <li v-for="item in installations" :key="item.text">{{ item.text }}</li>
       </ul>
     </div>
     <div :class="$style.media">
       <div :class="$style.title">Media</div>
       <ul :class="$style.list">
-        <li v-for="item in MEDIA" :key="item.text">{{ item.text }}</li>
+        <li v-for="item in media" :key="item.text">{{ item.text }}</li>
       </ul>
     </div>
   </div>
@@ -29,403 +29,52 @@
 
 <script>
 import Level from "./Level.vue";
+import dataEn from "../../../locales/en.json";
+import dataPl from "../../../locales/pl.json";
 export default {
   data() {
     return {
-      LEVELS: [
-        {
-          title: "Ground level",
-          area: "256",
-          roomsCount: "8",
-          height: "3.1m - 6.6m",
-          image: "/img/groundlevel.png",
-          areas: [
-            {
-              value: "79m²",
-              title: "great room",
-            },
-            {
-              value: "17m²",
-              title: "foyer",
-            },
-            {
-              value: "46m²",
-              title: "garage, 2.44m",
-            },
-            {
-              value: "15m²",
-              title: "garage foyer",
-            },
-            {
-              value: "34m²",
-              title: "corridor",
-            },
-            {
-              value: "8m²",
-              title: "laundry room",
-            },
-            {
-              value: "23m²",
-              title: "guest room",
-            },
-            {
-              value: "6m²",
-              title: "bathroom",
-            },
-            {
-              value: "23m²",
-              title: "kitchen",
-            },
-            {
-              value: "5m²",
-              title: "hallway",
-            },
-          ],
-          rooms: [
-            {
-              title: "Foyer and Central Corridor",
-              text: "Upon entering the home, guests are greeted by a welcoming foyer accentuated by graceful pocket doors that lead to an expansive corridor which connects the ground floor living spaces with the central staircase that bridges the transition between the communal areas below and the private sanctuaries above.",
-              mainImage: "/img/groundLevel/1/1.jpg",
-              images: [
-                {
-                  img: "/img/groundLevel/1/1.jpg",
-                },
-                {
-                  img: "/img/groundLevel/1/2.jpg",
-                },
-                {
-                  img: "/img/groundLevel/1/3.jpg",
-                },
-              ],
-            },
-            {
-              title: "The Great Room",
-              text: "The great room features reclaimed wooden beams and flooring, dating back 120 years, and a two-storynatural stone fireplace. Fitted with state-of-the-art ventilation and are tractable glass panel, the fireplace ensures warmth, style, and versatility.",
-              mainImage: "/img/groundLevel/2/1.jpg",
-              images: [
-                {
-                  img: "/img/groundLevel/2/1.jpg",
-                },
-                {
-                  img: "/img/groundLevel/2/2.jpg",
-                },
-                {
-                  img: "/img/groundLevel/2/3.jpg",
-                },
-                {
-                  img: "/img/groundLevel/2/4.jpg",
-                },
-              ],
-            },
-            {
-              title: "Vaulted Ceiling with Gallery",
-              text: "The vaulted ceiling creates a spacious and airy atmosphere in the great room, while the upper gallery offers an ideal spot for relaxation or reading and an excellent vantage point for viewing the room’s impressive architecture.",
-              mainImage: "/img/groundLevel/3/1.jpg",
-              images: [
-                {
-                  img: "/img/groundLevel/3/1.jpg",
-                },
-                {
-                  img: "/img/groundLevel/3/2.jpg",
-                },
-              ],
-            },
-            {
-              title: "Kitchen",
-              text: "The kitchen space has been intentionally left unfinished, offering new homeowners the unique opportunity to tailor it according to their tastes and preferences. To provide a glimpse of its potential,  we have included a rendering that envisions the kitchen in a classic white and black color scheme.",
-              mainImage: "/img/groundLevel/4/1.jpg",
-              images: [
-                {
-                  img: "/img/groundLevel/4/1.jpg",
-                },
-                {
-                  img: "/img/groundLevel/4/2.jpg",
-                },
-                {
-                  img: "/img/groundLevel/4/3.jpg",
-                },
-                {
-                  img: "/img/groundLevel/4/4.jpg",
-                },
-                {
-                  img: "/img/groundLevel/4/5.jpg",
-                },
-                {
-                  img: "/img/groundLevel/4/6.jpg",
-                },
-                {
-                  img: "/img/groundLevel/4/7.jpg",
-                },
-              ],
-            },
-            {
-              title: "Veranda",
-              text: "The 38 m² veranda offers a unique ambiance and opportunity to entertain guests and relish in the fresh air of the secluded rear garden.",
-              mainImage: "/img/groundLevel/5/1.jpg",
-              images: [
-                {
-                  img: "/img/groundLevel/5/1.jpg",
-                },
-                {
-                  img: "/img/groundLevel/5/2.jpg",
-                },
-                {
-                  img: "/img/groundLevel/5/3.jpg",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          title: "Upper Level",
-          area: "244",
-          roomsCount: "7",
-          height: "2.3m - 3.3m",
-          image: "/img/firstlevel.png",
-          areas: [
-            {
-              value: "63m²",
-              title: "gallery",
-            },
-            {
-              value: "19m²",
-              title: "bedroom",
-            },
-            {
-              value: "46m²",
-              title: "studio apartment",
-            },
-            {
-              value: "18m²",
-              title: "bedroom",
-            },
-            {
-              value: "31m²",
-              title: "corridor",
-            },
-            {
-              value: "11m²",
-              title: "master bathroom",
-            },
-            {
-              value: "25m²",
-              title: "master bedroom",
-            },
-            {
-              value: "8m²",
-              title: "bathroom",
-            },
-            {
-              value: "23m²",
-              title: "bedroom",
-            },
-          ],
-          rooms: [
-            {
-              title: "Upper Level",
-              text: "The upper level of the home includes four bedrooms houses four bedrooms with a bright hallway that connects to a shared bathroom and leads to the great room's upper gallery. The bathroom has been left unfinished, but renderings showcase potential design ideas, including additional laundry facilities.",
-              mainImage: "/img/upperLevel/1/1.jpg",
-              images: [
-                {
-                  img: "/img/upperLevel/1/1.jpg",
-                },
-                {
-                  img: "/img/upperLevel/1/2.jpg",
-                },
-                {
-                  img: "/img/upperLevel/1/3.jpg",
-                },
-                {
-                  img: "/img/upperLevel/1/4.jpg",
-                },
-                {
-                  img: "/img/upperLevel/1/5.jpg",
-                },
-                {
-                  img: "/img/upperLevel/1/6.jpg",
-                },
-                {
-                  img: "/img/upperLevel/1/7.jpg",
-                },
-              ],
-            },
-            {
-              title: "Master Suite",
-              text: "A luxurious master suite includes an en-suite bath and French doors that open onto a 38 m2 terrace. Renderings for the yet-to-be-completed master bathroom provide a potential design concept.",
-              mainImage: "/img/upperLevel/2/1.jpg",
-              images: [
-                {
-                  img: "/img/upperLevel/2/1.jpg",
-                },
-                {
-                  img: "/img/upperLevel/2/2.jpg",
-                },
-                {
-                  img: "/img/upperLevel/2/3.jpg",
-                },
-                {
-                  img: "/img/upperLevel/2/4.jpg",
-                },
-                {
-                  img: "/img/upperLevel/2/5.jpg",
-                },
-                {
-                  img: "/img/upperLevel/2/6.jpg",
-                },
-                {
-                  img: "/img/upperLevel/2/7.jpg",
-                },
-                {
-                  img: "/img/upperLevel/2/8.jpg",
-                },
-              ],
-            },
-            {
-              title: "Upper Balcony",
-              text: "An upper 9 m2 balcony above the main entrance of the house adds an element of luxury to the south-facing bedroom, allowing occupants to take in the captivating views of the orchard and surrounding areas.",
-              mainImage: "/img/upperLevel/3/1.jpg",
-              images: [
-                {
-                  img: "/img/upperLevel/3/1.jpg",
-                },
-                {
-                  img: "/img/upperLevel/3/2.jpg",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          title: "Basement level",
-          area: "124",
-          roomsCount: "6",
-          height: "2.3m",
-          image: "/img/basementlevel.png",
-          areas: [
-            {
-              value: "52m²",
-              title: "room",
-            },
-            {
-              value: "6m²",
-              title: "bathroom",
-            },
-            {
-              value: "29m²",
-              title: "room",
-            },
-            {
-              value: "6m²",
-              title: "storage",
-            },
-            {
-              value: "11m²",
-              title: "room",
-            },
-            {
-              value: "6m²",
-              title: "hallway",
-            },
-            {
-              value: "8m²",
-              title: "boiler room",
-            },
-            {
-              value: "6m²",
-              title: "room",
-            },
-          ],
-          rooms: [
-            {
-              title: "Full Basement",
-              text: "The spacious basement is a versatile and functional space for a variety of purposes, such as recreational activities, home theater, gym, and playroom for children.  The natural and electric lighting work together to provide a well-lit space which could also be used as a workshop.",
-              mainImage: "/img/basementLevel/1/1.jpg",
-              images: [
-                {
-                  img: "/img/basementLevel/1/1.jpg",
-                },
-                {
-                  img: "/img/basementLevel/1/2.jpg",
-                },
-              ],
-            },
-            {
-              title: "Garage & Studio Apartment",
-              text: "A self-contained living space with kitchen, bath and separate entrance is located above the attached two-stall heated garage, a perfect solution for live-in help or family members who need their own space.",
-              mainImage: "/img/basementLevel/2/1.jpg",
-              images: [
-                {
-                  img: "/img/basementLevel/2/1.jpg",
-                },
-              ],
-            },
-            {
-              title: "Hand-crafted Wood-shingled Roof",
-              text: "The wood-shingled roof that’s shaped and fitted around eyebrow dormers is a distinctive architectural feature that’s been used for centuries in Poland. Known as “gant,” the roof has a lifespan of around 40 to 50 years or even longer when properly maintained.",
-              mainImage: "/img/basementLevel/3/1.jpg",
-              images: [
-                {
-                  img: "/img/basementLevel/3/1.jpg",
-                },
-                {
-                  img: "/img/basementLevel/3/2.jpg",
-                },
-              ],
-            },
-            {
-              title: "Garden",
-              text: "Situated on a partially wooded plot of 3800 m2, the thoughtfully landscaped garden combines mature  trees and seasonal flowers that bloom from early spring through late fall, perfect for relaxing or organizing large parties.",
-              mainImage: "/img/basementLevel/4/1.jpg",
-              images: [
-                {
-                  img: "/img/basementLevel/4/1.jpg",
-                },
-                {
-                  img: "/img/basementLevel/4/2.jpg",
-                },
-                {
-                  img: "/img/basementLevel/4/3.jpg",
-                },
-                {
-                  img: "/img/basementLevel/4/4.jpg",
-                },
-                {
-                  img: "/img/basementLevel/4/5.jpg",
-                },
-                {
-                  img: "/img/basementLevel/4/6.jpg",
-                },
-              ],
-            },
-          ],
-        },
-      ],
-      INSTALLATIONS: [
-        {
-          text: "Entry management and smart alarm systems, equipped with high-resolution cameras, sensors and wi-fi connectivity allows homeowners to see and communicate with visitors in real-time from the central panel or their smartphones.",
-        },
-        {
-          text: "Automated irrigation system, fed by a deep well with an underground tank available for the catchment of rainwater.",
-        },
-        {
-          text: "Bi-functional floor and radiant heating system - Viessman gas boiler installed in 2018.",
-        },
-        {
-          text: "Sweeping stone driveway edged with reclaimed granite paving stones and outdoor lighting system creates a welcoming atmosphere for visitors with ample additional parking for guests.",
-        },
-      ],
-      MEDIA: [
-        {
-          text: "Gas, water and sewage from the municipal network.",
-        },
-        {
-          text: "Electricity from PGE Group.",
-        },
-        {
-          text: "Fiberoptic internet from Mazowieckie Sieci Światłowodowe.",
-        },
-      ],
+      levelsEn: dataEn.levels,
+      levelsPl: dataPl.levels,
+      levels: [],
+
+      installEn: dataEn.installations,
+      installPl: dataPl.installations,
+      installations: [],
+
+      mediaEn: dataEn.media,
+      mediaPl: dataPl.media,
+      media: [],
     };
+  },
+  mounted() {
+    if (this.$i18n.locale === "en") {
+      this.levels = this.levelsEn;
+      this.installations = this.installEn;
+      this.media = this.mediaEn;
+    } else {
+      this.levels = this.levelsPl;
+      this.installations = this.installPl;
+      this.media = this.mediaPl;
+    }
+  },
+  computed: {
+    locale() {
+      return this.$i18n.locale;
+    },
+  },
+  watch: {
+    locale() {
+      if (this.$i18n.locale === "en") {
+        this.levels = this.levelsEn;
+        this.installations = this.installEn;
+        this.media = this.mediaEn;
+      } else {
+        this.levels = this.levelsPl;
+        this.installations = this.installPl;
+        this.media = this.mediaPl;
+      }
+    },
   },
   components: {
     Level,

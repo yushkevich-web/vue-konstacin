@@ -2,20 +2,20 @@
   <div :class="$style.content">
     <div :class="$style.info">
       <div :class="$style.column">
-        <div :class="$style.top">lot</div>
+        <div :class="$style.top">{{ $t("fullScreenSection.lot") }}</div>
         <div :class="$style.bottom">3800 <span>m2</span></div>
       </div>
       <div :class="$style.column">
-        <div :class="$style.top">area</div>
+        <div :class="$style.top">{{ $t("fullScreenSection.area") }}</div>
         <div :class="$style.bottom">580 <span>m2</span></div>
       </div>
       <div :class="$style.column">
-        <div :class="$style.top">bedrooms</div>
+        <div :class="$style.top">{{ $t("fullScreenSection.bedrooms") }}</div>
         <div :class="$style.bottom">5</div>
       </div>
       <div :class="$style.column">
         <a :class="$style.text" href="#contacts" @click="scrollTo('#contacts')">
-          Ask for price
+          {{ $t("fullScreenSection.button") }}
         </a>
       </div>
     </div>
@@ -81,7 +81,7 @@ export default {
         @include custom(670) {
           padding: 1rem;
         }
-        @include custom(400) {
+        @include custom(460) {
           padding: 0.5rem;
         }
         white-space: nowrap;
@@ -95,8 +95,11 @@ export default {
         @include custom(670) {
           font-size: 1rem;
         }
-        @include custom(400) {
+        @include custom(460) {
           font-size: 0.8rem;
+        }
+        @include custom(342) {
+          font-size: 0.7rem;
         }
       }
       .bottom {
@@ -104,16 +107,22 @@ export default {
         @include custom(670) {
           font-size: 1rem;
         }
-        @include custom(400) {
+        @include custom(460) {
           font-size: 0.8rem;
+        }
+        @include custom(342) {
+          font-size: 0.7rem;
         }
         & span {
           @include Font18-400;
           @include custom(670) {
             font-size: 1rem;
           }
-          @include custom(400) {
+          @include custom(460) {
             font-size: 0.8rem;
+          }
+          @include custom(342) {
+            font-size: 0.7rem;
           }
         }
       }
@@ -123,8 +132,11 @@ export default {
         @include custom(670) {
           font-size: 1rem;
         }
-        @include custom(400) {
+        @include custom(460) {
           font-size: 0.8rem;
+        }
+        @include custom(342) {
+          font-size: 0.7rem;
         }
       }
     }
