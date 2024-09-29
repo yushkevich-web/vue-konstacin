@@ -1,10 +1,10 @@
 <template>
-  <div :class="$style.container">
+  <div :class="$style.container" id="presentation">
     <h2 :class="$style.title">{{ $t("videoSection.title") }}</h2>
     <div :class="$style.video">
       <video
         controls
-        poster="/img/fullscreen.jpg"
+        poster="/img/video-preview.jpg"
         ref="video"
         src="/video/en.mp4"
         type="video/mp4"
@@ -13,7 +13,7 @@
       ></video>
       <video
         controls
-        poster="/img/fullscreen.jpg"
+        poster="/img/video-preview.jpg"
         ref="video"
         src="/video/pl.mp4"
         type="video/mp4"

@@ -10,8 +10,8 @@
       <router-link to="/privacy-policy" :class="$style.privacy">
         {{ $t("policy") }}
       </router-link>
-      <a href="tel:+48000000000" :class="$style.email">
-        contact@konstancinhouse4sale.com
+      <a href="mailto: agata.sliwka@hamiltonmay.com" :class="$style.email">
+        agata.sliwka@hamiltonmay.com
       </a>
     </div>
   </footer>

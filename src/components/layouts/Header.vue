@@ -8,16 +8,19 @@
           :class="$style.link"
           >{{ $t("headerSection.firstLink") }}
         </a>
-        <a href="#contacts" @click="scrollTo('#contacts')" :class="$style.link"
+        <a
+          href="#presentation"
+          @click="scrollTo('#presentation')"
+          :class="$style.link"
           >{{ $t("headerSection.secondLink") }}
         </a>
-        <a href="#points" @click="scrollTo('#points')" :class="$style.link">{{
-          $t("headerSection.thirdLink")
-        }}</a>
+        <a href="#contacts" @click="scrollTo('#contacts')" :class="$style.link"
+          >{{ $t("headerSection.thirdLink") }}
+        </a>
         <LocalSwitcher />
       </nav>
-      <a href="mailto:contact@konstancinhouse4sale.com" :class="$style.mail">
-        contact@konstancinhouse4sale.com
+      <a href="mailto: agata.sliwka@hamiltonmay.com" :class="$style.mail">
+        agata.sliwka@hamiltonmay.com
       </a>
     </header>
   </div>
