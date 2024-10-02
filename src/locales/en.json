@@ -85,7 +85,7 @@
         },
         {
           "title": "The Great Room",
-          "text": "The great room features reclaimed wooden beams and flooring, dating back 120 years, and a two-storynatural stone fireplace. Fitted with state-of-the-art ventilation and are tractable glass panel, the fireplace ensures warmth, style, and versatility.",
+          "text": "The great room features reclaimed wooden beams and flooring, dating back 120 years, and a two-story natural stone fireplace. Fitted with state-of-the-art ventilation and a retractable glass panel, the fireplace ensures warmth, style, and versatility.",
           "mainImage": "/img/groundLevel/2/1.jpg",
           "images": [
             {
@@ -208,7 +208,7 @@
       "rooms": [
         {
           "title": "Upper Level",
-          "text": "The upper level of the home includes four bedrooms houses four bedrooms with a bright hallway that connects to a shared bathroom and leads to the great room's upper gallery. The bathroom has been left unfinished, but renderings showcase potential design ideas, including additional laundry facilities.",
+          "text": "The upper level of the home includes four bedrooms, including the Master Suite, which are connected by a bright hallway with a shared bathroom at one end and the great room's upper gallery at the other end. The bathroom has been left unfinished, but renderings showcase potential design ideas, including additional laundry facilities.",
           "mainImage": "/img/upperLevel/1/1.jpg",
           "images": [
             {
@@ -389,16 +389,16 @@
   "installationsTitle": "Installations",
   "installations": [
     {
-      "text": "Entry management and smart alarm systems, equipped with high-resolution cameras, sensors and wi-fi connectivity allows homeowners to see and communicate with visitors in real-time from the central panel or their smartphones."
+      "text": "Entry management and smart alarm systems, equipped with high-resolution cameras, sensors and wi-fi connectivity allow homeowners to see and communicate with visitors in real-time from the central panel or their smartphones."
     },
     {
-      "text": "Automated irrigation system, fed by a deep well with an underground tank available for the catchment of rainwater."
+      "text": "Automated irrigation system is fed by a deep well and an underground tank is also available for the catchment of rainwater."
     },
     {
       "text": "Bi-functional floor and radiant heating system - Viessman gas boiler installed in 2018."
     },
     {
-      "text": "Sweeping stone driveway edged with reclaimed granite paving stones and outdoor lighting system creates a welcoming atmosphere for visitors with ample additional parking for guests."
+      "text": "Sweeping stone driveway edged with reclaimed granite paving stones, and an outdoor lighting system create a welcoming atmosphere and ample parking for guests."
     }
   ],
   "mediaTitle": "Media",
@@ -425,29 +425,77 @@
   "nearbyPointsTitle": "Nearby points of interest",
   "nearbyPoints": [
     {
-      "image": "/img/places/1.jpg",
+      "image": "/img/places/la-fleur-museum.jpg",
       "title": "Villa La Fleur Museum",
       "text": "The museum features a splendid private collection of the works of Polish and Jewish artists associated with the École de Paris as well as temporary exhibitions",
       "link": "https://villalafleur.com/"
     },
     {
-      "image": "/img/places/2.jpg",
+      "image": "/img/places/stara-papiernia.jpg",
       "title": "Stara Papiernia Shopping Center",
       "text": "A beautiful, modern shopping center situated in a renovated 19th century paper mill with a shopping street characteristic of small towns where cultural events, concerts and shows are organized.",
       "link": "http://starapapiernia.pl/en"
     },
     {
-      "image": "/img/places/3.jpg",
+      "image": "/img/places/farmer-market.jpg",
       "title": "Konstancin Farmers Market",
       "text": "On Wednesdays and Saturdays, the area across from Stara Papiernia on al. Wojska Polskiego, turns into a bustling and colorful market square for a few hours. Local producers of poultry, meats, cheeses and fruits & vegetables offer a wide variety of food and handcrafted products.",
       "link": "https://www.kensingtonfarmersmarket.org/"
     },
     {
-      "image": "/img/places/4.jpg",
+      "image": "/img/places/zeromski-museum.jpg",
       "title": "Stefan Żeromski Museum",
       "text": "The former home of Stefan Zeromski (1864-1925), a well-known Polish writer, offers free guided tours which can be arranged at a specific time.",
       "link": "https://mnki.pl/zeromski/eng/the_museum/about_museum"
-    }
+    },
+    {
+      "image": "/img/places/skorzewski-spa.jpg",
+      "title": "Count Witold Skórzewski Spa Park",
+      "text": "Nestled in the center of Konstancin-Jeziorna, the therapeutic saline water graduation tower and the Hugonowka natural medicine clinic is a popular attraction for locals, tourists and convalescents.",
+      "link": "http://teznia.com.pl/"
+    },
+    {
+      "image": "/img/places/asw.jpg",
+      "title": "American School of Warsaw",
+      "text": "ASW is an English-using international school for children aged 3 to 18-years-of-age in elementary school, middle school, and high school, including an International Baccalaureate program.",
+      "link": "https://www.aswarsaw.org/"
+    },
+    {
+      "image": "/img/places/kabaty-forest.jpg",
+      "title": "Kabaty Forest Nature Preserve",
+      "text": "The largest nature preserve in the Mazowieckie Voivodeship",
+      "link": "https://en.wikipedia.org/wiki/Kabaty_Woods"
+    },
+    {
+      "image": "/img/places/wake-park.jpg",
+      "title": "Wake Park Konstancin",
+      "text": "Wake Park is a water sports & leisure center with 2 wakeboard lifts, a stand-up paddle center, 5 beach volleyball pitches, 2 water playgrounds, footbag and Badminton courts with a beach bar and restaurant for chilling.",
+      "link": "https://wawawake.pl/"
+    },
+    {
+      "image": "/img/places/botanical-gardens.jpg",
+      "title": "Botanical Gardens in Powsin",
+      "text": "Operated by the Polish Academy of Sciences, the Gardens offer a wide array of year-round educational programs, exhibitions and events.",
+      "link": "http://ogrod-powsin.pl/"
+    },  
+    {
+      "image": "/img/places/wisla-river.jpg",
+      "title": "Wisła River & Ferry",
+      "text": "Only 4.4 km from the property, the Wisła river offers a variety of opportunities for recreation, including fishing, biking, and boating.  You can also cross the river to the other side by car, bike or on foot by taking a ride on the Gassy-Karczew Ferry.",
+      "link": "http://prom-transeko.pl/"
+    },  
+    {
+      "image": "/img/places/chojnow-park.jpg",
+      "title": "Chojnów Landscape Park",
+      "text": "Covering an area of 68 square kilometers of the Chojnów Forest, the park has 11 nature reserves and is popular for hiking, cycling and horseback-riding.",
+      "link": "https://en.wikipedia.org/wiki/Chojn%C3%B3w_Landscape_Park"
+    },
+    {
+      "image": "/img/places/mistrzowie-imprez.jpg",
+      "title": "Mistrzowie Imprez",
+      "text": "Mistrzowie Imprez offers an array of fun activities for both young and old with an impressive array of equipment, including Monster Trucks, Aero tunnel, Jump Chute, 360⁰ Swing, Twisted Buggy and more.",
+      "link": "https://www.mistrzowieimprez.pl/"
+    } 
   ],
   "formSection": {
     "title": "Feel free to contact",

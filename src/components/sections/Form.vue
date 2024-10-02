@@ -41,8 +41,8 @@ export default {
   methods: {
     sendEmail() {
       const templateParams = {
-        user_name: this.name,
-        user_email: this.email,
+        from_name: this.name,
+        email_id: this.email,
         message: this.message,
       };
 

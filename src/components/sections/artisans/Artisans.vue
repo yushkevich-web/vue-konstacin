@@ -43,7 +43,7 @@ export default {
           email: "biuro@acqua-serwis.pl",
           icon: "/img/icons/artisans/3.svg",
           text: "Sławomir Mordzoń",
-          work: "Plumbing",
+          work: "Heating",
         },
         {
           name: "Tadeusz Harkabuz",
@@ -72,7 +72,7 @@ export default {
           website: "http://www.kamagro.com.pl",
           icon: "/img/icons/artisans/5.svg",
           text: "Kamagro",
-          work: "Heating",
+          work: "Plumbing",
         },
       ],
     };

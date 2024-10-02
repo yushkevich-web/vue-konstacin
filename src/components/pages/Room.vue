@@ -79,7 +79,7 @@ export default {
       let vm = this;
       this.interval = setInterval(() => {
         vm.nextSlide();
-      }, 2000);
+      }, 4000);
     },
   },
   components: {

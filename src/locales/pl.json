@@ -236,7 +236,7 @@
         },
         {
           "title": "Główna sypialnia",
-          "text": "Główna sypialnia posiada własną łazienkę i drzwi we francuskim stylu, które prowadzą na taras o powierzchni 38m2. Modele graficzne dla pozostającej do wykończenia łazienki głównej stanowią potencjalną propozycję projektową.",
+          "text": "Górny poziom domu obejmuje cztery sypialnie, w tym główną sypialnię, które są połączone jasnym korytarzem ze wspólną łazienką na jednym końcu i górną galerią wielkiego pokoju na drugim końcu. Łazienka pozostała niedokończona, ale renderingi przedstawiają potencjalne pomysły projektowe, w tym dodatkowe pralnie.",
           "mainImage": "/img/upperLevel/2/1.jpg",
           "images": [
             {
@@ -425,28 +425,70 @@
   "nearbyPointsTitle": "Pobliskie atrakcje",
   "nearbyPoints": [
     {
-      "image": "/img/places/1.jpg",
+      "image": "/img/places/la-fleur-museum.jpg",
       "title": "Muzeum Villa La Fleur",
       "text": "W muzeum znajduje się wspaniała prywatna kolekcja dzieł artystów polskich i żydowskich związanych z École de Paris, a także wystawy czasowe",
       "link": "https://villalafleur.com/"
     },
     {
-      "image": "/img/places/2.jpg",
+      "image": "/img/places/stara-papiernia.jpg",
       "title": "Centrum Handlowe 'Stara Papiernia'",
       "text": "Piękne, nowoczesne centrum handlowe położone w odnowionej XIX-owiecznej papierni przy ulicy handlowej, tak charakterystycznej dla małych miasteczek, w których organizowane są różne lokalne imprezy kulturalne, koncerty i pokazy.",
       "link": "http://starapapiernia.pl/en"
     },
     {
-      "image": "/img/places/3.jpg",
+      "image": "/img/places/farmer-market.jpg",
       "title": "Rynek Rolny w Konstancinie",
       "text": "W środy i soboty teren naprzeciwko Starej Papierni na al. Wojska Polskiego zamienia się na kilka godzin w gwarny i kolorowy rynek. Lokalni producenci drobiu, mięs, serów oraz owoców i warzyw oferują szeroką gamę produktów spożywczych i rękodzielniczych."
     },
     {
-      "image": "/img/places/4.jpg",
+      "image": "/img/places/zeromski-museum.jpg",
       "title": "Muzeum Stefana Żeromskiego",
       "text": "Dawny dom Stefana Żeromskiego (1864-1925), znanego polskiego pisarza, oferuje bezpłatne wycieczki z przewodnikiem, które można zarezerwować na konkretną godzinę.",
       "link": "https://mnki.pl/zeromski/eng/the_museum/about_museum"
-    }
+    },
+    {
+      "image": "/img/places/skorzewski-spa.jpg",
+      "title": "Park Zdrojowy im. hrabiego Witolda Skórzewskiego",
+      "text": "Położone w centrum Konstancina-Jeziornej tężnie lecznicze z solanką orazklinika medycyny naturalnej Hugonówka to popularne atrakcje dla mieszkańców, atakże dla odwiedzających te strony turystów i rekonwalescentów.",
+      "link": "http://teznia.com.pl/"
+    },
+    {
+      "image": "/img/places/asw.jpg",
+      "title": "Szkoła Ambasady Amerykańskiej",
+      "text": "Szkoła Ambasady Amerykańskiej jest międzynarodową szkołą z wykładowym językiem angielskim dla dzieci w wieku od 3 do 18 lat. Placówka składa się ze szkoły podstawowej, gimnazjum oraz liceum oferującego program matury międzynarodowej.",
+      "link": "https://www.aswarsaw.org/"
+    },
+    {
+      "image": "/img/places/wake-park.jpg",
+      "title": "Wake Park w Konstancinie",
+      "text": "Wake Park to centrum sportów wodnych i rekreacji z 2 wyciągam i wakeboardowymi, centrum SUP, 5 boiskami do siatkówki plażowej, 2 wodnymi placami zabaw, boiskami do piłki nożnej oraz badmintona, a nawet z plażowymi barami i restauracją dla rozrywki i komfortu gości.",
+      "link": "https://wawawake.pl/"
+    },    
+    {
+      "image": "/img/places/botanical-gardens.jpg",
+      "title": "Ogrody botaniczne w Powsinie",
+      "text": "Prowadzone przez Polską Akademię Nauk Ogrodyoferują szeroki wachlarz całorocznych programów edukacyjnych, a takżeinteresujących wystaw i innych wydarzeń kulturalnych.",
+      "link": "http://ogrod-powsin.pl/"
+    },
+    {
+      "image": "/img/places/wisla-river.jpg",
+      "title": "Wisła & Prom",
+      "text": "W odległości zaledwie 4,4 km od obiektu płynierzeka Wisła, w rejonie której na odwiedzających czeka wiele zajęćrekreacyjnych, w tym wędkarstwo, jazda rowerem oraz pływanie łódką.  Na drugą stronę rzeki można przeprawić sięteż samochodem, rowerem lub pieszo, wsiadając na prom Gassy-Karczew.",
+      "link": "http://prom-transeko.pl/"
+    },  
+    {
+      "image": "/img/places/chojnow-park.jpg",
+      "title": "Chojnowski Park Krajobrazowy ",
+      "text": "Obejmujący obszar 68 kilometrów kwadratowychPuszczy Chojnowskiej park posiada 11 rezerwatów przyrody i jest popularnymmiejscem spacerów, a także rekreacji konnej i rowerowej.",
+      "link": "https://en.wikipedia.org/wiki/Chojn%C3%B3w_Landscape_Park"
+    },  
+    {
+      "image": "/img/places/mistrzowie-imprez.jpg",
+      "title": "Mistrzowie Imprez ",
+      "text": "Mistrzowie Imprez oferują szereg zajęć rozrywkowych zarówno dla młodych, jak i starszych entuzjastów adrenaliny, dzięki imponującej gamie sprzętu, takiego jak: Monster Trucki, Aerotunel, Skokochron, Katapulta, Huśtawka 360⁰, Wykręcone Buggy i wiele innych.",
+      "link": "https://www.mistrzowieimprez.pl/"
+    }  
   ],
   "formSection": {
     "title": "Skontaktuj się z nami",
