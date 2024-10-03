@@ -110,7 +110,7 @@ export default {
       & li {
         list-style-type: disc;
         margin: 0 0 1rem 0;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         @include custom(640) {
           font-size: 1.2rem;
         }
@@ -136,7 +136,7 @@ export default {
       & li {
         list-style-type: disc;
         margin: 0 0 1rem 0;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         @include custom(640) {
           font-size: 1.2rem;
         }

@@ -80,33 +80,49 @@ export default {
         padding: 3.125rem 0;
         gap: 1rem;
         border-top: 0.0625rem solid $darkText;
-        @include custom(670) {
+        @include custom(800) {
           display: block;
         }
         &:last-child {
           border-bottom: 0.0625rem solid $darkText;
         }
         .image {
-          max-width: 31.25rem;
-          max-height: 18.75rem;
+          flex: 0 0 33.333%;
+          @include custom(800) {
+            max-width: 31.25rem;
+            max-height: 18.75rem;
+            margin: 0 auto 1.5rem auto;
+          }
 
           & img {
             width: 100%;
-            height: 100%;
-          }
-          @include custom(670) {
-            margin: 0 auto 1rem auto;
+            height: 18rem;
+            @include custom(1100) {
+              height: 15rem;
+            }
+            @include custom(800) {
+              height: 18rem;
+              width: 100%;
+            }
+            @include custom(400) {
+              height: 15rem;
+            }
+            @include custom(370) {
+              height: 12rem;
+            }
           }
         }
         .info {
+          text-align: left;
           color: $darkText;
+          flex: 0 1 50%;
           .subtitle {
             font-size: 2.25rem;
-            margin: 0 auto 1rem auto;
-            @include custom(800) {
+            margin: 0 0 1rem 0;
+            @include custom(930) {
               font-size: 1.5rem;
             }
-            @include custom(670) {
+            @include custom(800) {
               text-align: center;
               margin: 0 0 2rem 0;
             }
@@ -114,10 +130,14 @@ export default {
           .text {
             max-width: 31.25rem;
             font-size: 1.125rem;
-            margin: 0 auto 1rem auto;
+            margin: 0 0 1rem 0;
             line-height: 140%;
-            @include custom(800) {
+            @include custom(930) {
               font-size: 1rem;
+            }
+            @include custom(800) {
+              text-align: center;
+              margin: 0 auto 2rem auto;
             }
           }
         }
@@ -125,13 +145,13 @@ export default {
           background-color: $grey;
           border-radius: 50%;
           padding: 1.5rem;
-          @include custom(800) {
+          @include custom(900) {
             padding: 1rem;
             display: inline-block;
           }
-          @include custom(500) {
-            max-width: 3rem;
-            max-height: 3rem;
+          @include custom(900) {
+            max-width: 3.5rem;
+            max-height: 3.5rem;
             & img {
               width: 100%;
               height: 100%;

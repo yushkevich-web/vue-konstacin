@@ -33,7 +33,10 @@
         <div :class="$style.left">
           <div :class="$style.title">{{ item.title }}</div>
           <div :class="$style.text">{{ item.text }}</div>
-          <button :class="$style.button">
+          <button
+            :class="$style.button"
+            v-if="item.images && item.images.length > 1"
+          >
             {{ $t("levelsButton") }}
           </button>
         </div>
@@ -57,11 +60,13 @@ export default {
   },
   methods: {
     setRooms(item) {
-      this.$store.commit("setRooms", item);
-      this.$router.push("/room");
-      this.$nextTick(() => {
-        window.scrollTo(0, 0);
-      });
+      if (item.images.length > 1) {
+        this.$store.commit("setRooms", item);
+        this.$router.push("/room");
+        this.$nextTick(() => {
+          window.scrollTo(0, 0);
+        });
+      }
     },
   },
 };
