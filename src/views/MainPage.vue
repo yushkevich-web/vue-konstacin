@@ -11,6 +11,7 @@
     <NearbyPoints />
     <Form />
     <Footer />
+    <Modal />
   </div>
 </template>
 
@@ -26,6 +27,7 @@ import NearbyPoints from "@/components/sections/NearbyPoints.vue";
 import Artisans from "@/components/sections/artisans/Artisans.vue";
 import ProjectTeam from "@/components/sections/ProjectTeam.vue";
 import Nature from "@/components/sections/Nature.vue";
+import Modal from "@/components/modals/Modal.vue";
 export default {
   components: {
     Header,
@@ -39,6 +41,7 @@ export default {
     ProjectTeam,
     Footer,
     Nature,
+    Modal,
   },
 };
 </script>

@@ -57,6 +57,7 @@ export default {
           (response) => {
             console.log("SUCCESS!", response.status, response.text);
             if (response.status === 200) {
+              this.$store.commit("setIsModalOpen", true);
               this.name = "";
               this.email = "";
               this.message = "";

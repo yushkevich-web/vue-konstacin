@@ -464,7 +464,7 @@
       "title": "Wake Park w Konstancinie",
       "text": "Wake Park to centrum sportów wodnych i rekreacji z 2 wyciągam i wakeboardowymi, centrum SUP, 5 boiskami do siatkówki plażowej, 2 wodnymi placami zabaw, boiskami do piłki nożnej oraz badmintona, a nawet z plażowymi barami i restauracją dla rozrywki i komfortu gości.",
       "link": "https://wawawake.pl/"
-    },    
+    },
     {
       "image": "/img/places/botanical-gardens.jpg",
       "title": "Ogrody botaniczne w Powsinie",
@@ -476,19 +476,19 @@
       "title": "Wisła & Prom",
       "text": "W odległości zaledwie 4,4 km od obiektu płynierzeka Wisła, w rejonie której na odwiedzających czeka wiele zajęćrekreacyjnych, w tym wędkarstwo, jazda rowerem oraz pływanie łódką.  Na drugą stronę rzeki można przeprawić sięteż samochodem, rowerem lub pieszo, wsiadając na prom Gassy-Karczew.",
       "link": "http://prom-transeko.pl/"
-    },  
+    },
     {
       "image": "/img/places/chojnow-park.jpg",
       "title": "Chojnowski Park Krajobrazowy ",
       "text": "Obejmujący obszar 68 kilometrów kwadratowychPuszczy Chojnowskiej park posiada 11 rezerwatów przyrody i jest popularnymmiejscem spacerów, a także rekreacji konnej i rowerowej.",
       "link": "https://en.wikipedia.org/wiki/Chojn%C3%B3w_Landscape_Park"
-    },  
+    },
     {
       "image": "/img/places/mistrzowie-imprez.jpg",
       "title": "Mistrzowie Imprez ",
       "text": "Mistrzowie Imprez oferują szereg zajęć rozrywkowych zarówno dla młodych, jak i starszych entuzjastów adrenaliny, dzięki imponującej gamie sprzętu, takiego jak: Monster Trucki, Aerotunel, Skokochron, Katapulta, Huśtawka 360⁰, Wykręcone Buggy i wiele innych.",
       "link": "https://www.mistrzowieimprez.pl/"
-    }  
+    }
   ],
   "formSection": {
     "title": "Skontaktuj się z nami",
@@ -496,5 +496,6 @@
   },
   "policy": "Polityka prywatności",
   "height": "wysokość",
-  "rooms": "pokoji"
+  "rooms": "pokoji",
+  "formResponse": "Twoja wiadomość została pomyślnie wysłana"
 }
