@@ -35,23 +35,25 @@
     .row {
       display: grid;
       grid-template-columns: 2fr 1fr;
-      margin: 0 0 2rem 0;
-      gap: 2rem;
-      @include custom(640) {
+      margin: 0 0 1rem 0;
+      align-items: center;
+      gap: 1rem;
+      @include custom(780) {
         grid-template-columns: 1fr;
-        margin: 0 0 1rem 0;
-        gap: 1rem;
       }
       &:last-child {
         grid-template-columns: 1fr 2fr;
-        @include custom(640) {
+        @include custom(780) {
           grid-template-columns: 1fr;
         }
       }
     }
     & img {
       width: 100%;
-      height: 100%;
+      height: 20rem;
+      @include custom(780) {
+        height: 100%;
+      }
     }
     .title {
       @include SectionTitle;

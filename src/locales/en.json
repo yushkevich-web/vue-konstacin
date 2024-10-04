@@ -477,13 +477,13 @@
       "title": "Botanical Gardens in Powsin",
       "text": "Operated by the Polish Academy of Sciences, the Gardens offer a wide array of year-round educational programs, exhibitions and events.",
       "link": "http://ogrod-powsin.pl/"
-    },  
+    },
     {
       "image": "/img/places/wisla-river.jpg",
       "title": "Wisła River & Ferry",
       "text": "Only 4.4 km from the property, the Wisła river offers a variety of opportunities for recreation, including fishing, biking, and boating.  You can also cross the river to the other side by car, bike or on foot by taking a ride on the Gassy-Karczew Ferry.",
       "link": "http://prom-transeko.pl/"
-    },  
+    },
     {
       "image": "/img/places/chojnow-park.jpg",
       "title": "Chojnów Landscape Park",
@@ -495,7 +495,7 @@
       "title": "Mistrzowie Imprez",
       "text": "Mistrzowie Imprez offers an array of fun activities for both young and old with an impressive array of equipment, including Monster Trucks, Aero tunnel, Jump Chute, 360⁰ Swing, Twisted Buggy and more.",
       "link": "https://www.mistrzowieimprez.pl/"
-    } 
+    }
   ],
   "formSection": {
     "title": "Feel free to contact",
@@ -503,5 +503,6 @@
   },
   "policy": "Privacy policy",
   "height": "height",
-  "rooms": "rooms"
+  "rooms": "rooms",
+  "formResponse": "your message has been sent successfully"
 }
