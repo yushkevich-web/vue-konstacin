@@ -12,7 +12,7 @@
         :class="$style.close"
         @click="$store.commit('setIsModalOpen', false)"
       >
-        close
+        Ok
       </div>
     </div>
   </div>
@@ -44,11 +44,14 @@
     background: rgba(0, 0, 0, 0.4);
     transition: opacity 0.3ms;
     z-index: 100;
-    animation: expand 0.3s ease-in-out;
+    // animation: expand 0.3s ease-in-out;
   }
   .close {
+    background: #eee;
+    padding: 20px 20px;
     cursor: pointer;
     text-align: center;
+    font-size: 1.3rem;
   }
   .content {
     &::-webkit-scrollbar {
@@ -64,9 +67,8 @@
     max-width: 37.5rem;
     width: 100%;
     background: $white;
-    border-radius: 2.5rem;
     z-index: 100;
-    animation: expand 0.2s ease-in-out;
+    // animation: expand 0.2s ease-in-out;
     padding: 2.5rem;
     @include custom(632) {
       width: calc(100vw - 2rem);
@@ -79,7 +81,7 @@
   .body {
     text-align: center;
     margin: 0 0 2rem 0;
-    text-transform: uppercase;
+    font-size: 1.5rem;
   }
 }
 </style>

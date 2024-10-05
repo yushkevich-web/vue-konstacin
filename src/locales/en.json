@@ -336,13 +336,7 @@
         },
         {
           "title": "Garage & Studio Apartment",
-          "text": "A self-contained living space with kitchen, bath and separate entrance is located above the attached two-stall heated garage, a perfect solution for live-in help or family members who need their own space.",
-          "mainImage": "/img/basementLevel/2/1.jpg",
-          "images": [
-            {
-              "img": "/img/basementLevel/2/1.jpg"
-            }
-          ]
+          "text": "A self-contained living space with kitchen, bath and separate entrance is located above the attached two-stall heated garage, a perfect solution for live-in help or family members who need their own space."
         },
         {
           "title": "Hand-crafted Wood-shingled Roof",
@@ -504,5 +498,5 @@
   "policy": "Privacy policy",
   "height": "height",
   "rooms": "rooms",
-  "formResponse": "your message has been sent successfully"
+  "formResponse": "Your message has been sent successfully"
 }
