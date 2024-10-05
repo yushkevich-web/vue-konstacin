@@ -336,13 +336,8 @@
         },
         {
           "title": "Garaż i mieszkanie typu studio",
-          "text": "Samodzielne pomieszczenie mieszkalne z kuchnią, łazienką i osobnym wejściem znajduje się nad połączonym z domemdwu-samochodowym, ogrzewanym garażem, stanowi idealną propozycję dla zatrudnionej z zakwaterowaniem pomocy domowej lub członków rodziny, którzy potrzebują własnej przestrzeni.  ",
-          "mainImage": "/img/basementLevel/2/1.jpg",
-          "images": [
-            {
-              "img": "/img/basementLevel/2/1.jpg"
-            }
-          ]
+          "text": "Samodzielne pomieszczenie mieszkalne z kuchnią, łazienką i osobnym wejściem znajduje się nad połączonym z domemdwu-samochodowym, ogrzewanym garażem, stanowi idealną propozycję dla zatrudnionej z zakwaterowaniem pomocy domowej lub członków rodziny, którzy potrzebują własnej przestrzeni.",
+          "noImg": true
         },
         {
           "title": "Ręcznie wykonany dach z gontem drewnianym",
