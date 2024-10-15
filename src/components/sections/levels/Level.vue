@@ -243,35 +243,6 @@ export default {
         }
       }
     }
-    .roomRow {
-      display: block;
-      padding: 4rem 0;
-      border-top: 0.0625rem solid $black;
-      .title {
-        font-size: 1.75rem;
-        margin: 0 0 2.5rem 0;
-        @include custom(400) {
-          font-size: 1.5rem;
-          margin: 0 0 1rem 0;
-        }
-        @include custom(340) {
-          font-size: 1.2rem;
-        }
-      }
-      .text {
-        font-size: 1.3rem;
-        line-height: 140%;
-        @include custom(930) {
-          font-size: 1.2rem;
-        }
-        @include custom(400) {
-          font-size: 1rem;
-        }
-      }
-      .noImg {
-        display: none;
-      }
-    }
   }
 }
 </style>

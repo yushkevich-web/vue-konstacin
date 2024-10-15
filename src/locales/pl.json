@@ -337,7 +337,7 @@
         {
           "title": "Garaż i mieszkanie typu studio",
           "text": "Samodzielne pomieszczenie mieszkalne z kuchnią, łazienką i osobnym wejściem znajduje się nad połączonym z domemdwu-samochodowym, ogrzewanym garażem, stanowi idealną propozycję dla zatrudnionej z zakwaterowaniem pomocy domowej lub członków rodziny, którzy potrzebują własnej przestrzeni.",
-          "noImg": true
+          "mainImage": "/img/basementLevel/garage-studio.jpg"
         },
         {
           "title": "Ręcznie wykonany dach z gontem drewnianym",
@@ -420,6 +420,12 @@
   "nearbyPointsTitle": "Pobliskie atrakcje",
   "nearbyPoints": [
     {
+      "image": "/img/places/asw.jpg",
+      "title": "Szkoła Ambasady Amerykańskiej",
+      "text": "Szkoła Ambasady Amerykańskiej jest międzynarodową szkołą z wykładowym językiem angielskim dla dzieci w wieku od 3 do 18 lat. Placówka składa się ze szkoły podstawowej, gimnazjum oraz liceum oferującego program matury międzynarodowej.",
+      "link": "https://www.aswarsaw.org/"
+    },
+    {
       "image": "/img/places/la-fleur-museum.jpg",
       "title": "Muzeum Villa La Fleur",
       "text": "W muzeum znajduje się wspaniała prywatna kolekcja dzieł artystów polskich i żydowskich związanych z École de Paris, a także wystawy czasowe",
@@ -447,12 +453,6 @@
       "title": "Park Zdrojowy im. hrabiego Witolda Skórzewskiego",
       "text": "Położone w centrum Konstancina-Jeziornej tężnie lecznicze z solanką orazklinika medycyny naturalnej Hugonówka to popularne atrakcje dla mieszkańców, atakże dla odwiedzających te strony turystów i rekonwalescentów.",
       "link": "http://teznia.com.pl/"
-    },
-    {
-      "image": "/img/places/asw.jpg",
-      "title": "Szkoła Ambasady Amerykańskiej",
-      "text": "Szkoła Ambasady Amerykańskiej jest międzynarodową szkołą z wykładowym językiem angielskim dla dzieci w wieku od 3 do 18 lat. Placówka składa się ze szkoły podstawowej, gimnazjum oraz liceum oferującego program matury międzynarodowej.",
-      "link": "https://www.aswarsaw.org/"
     },
     {
       "image": "/img/places/wake-park.jpg",

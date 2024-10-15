@@ -337,7 +337,7 @@
         {
           "title": "Garage & Studio Apartment",
           "text": "A self-contained living space with kitchen, bath and separate entrance is located above the attached two-stall heated garage, a perfect solution for live-in help or family members who need their own space.",
-          "noImg": true
+          "mainImage": "/img/basementLevel/garage-studio.jpg"
         },
         {
           "title": "Hand-crafted Wood-shingled Roof",
@@ -420,6 +420,12 @@
   "nearbyPointsTitle": "Nearby points of interest",
   "nearbyPoints": [
     {
+      "image": "/img/places/asw.jpg",
+      "title": "American School of Warsaw",
+      "text": "ASW is an English-using international school for children aged 3 to 18-years-of-age in elementary school, middle school, and high school, including an International Baccalaureate program.",
+      "link": "https://www.aswarsaw.org/"
+    },
+    {
       "image": "/img/places/la-fleur-museum.jpg",
       "title": "Villa La Fleur Museum",
       "text": "The museum features a splendid private collection of the works of Polish and Jewish artists associated with the École de Paris as well as temporary exhibitions",
@@ -448,12 +454,6 @@
       "title": "Count Witold Skórzewski Spa Park",
       "text": "Nestled in the center of Konstancin-Jeziorna, the therapeutic saline water graduation tower and the Hugonowka natural medicine clinic is a popular attraction for locals, tourists and convalescents.",
       "link": "http://teznia.com.pl/"
-    },
-    {
-      "image": "/img/places/asw.jpg",
-      "title": "American School of Warsaw",
-      "text": "ASW is an English-using international school for children aged 3 to 18-years-of-age in elementary school, middle school, and high school, including an International Baccalaureate program.",
-      "link": "https://www.aswarsaw.org/"
     },
     {
       "image": "/img/places/kabaty-forest.jpg",

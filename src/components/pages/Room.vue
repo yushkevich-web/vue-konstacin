@@ -122,7 +122,7 @@ export default {
     }
 
     .wrapper {
-      max-width: 65rem;
+      max-width: 60rem;
       margin: 0 auto 3rem auto;
       overflow: hidden;
       position: relative;
